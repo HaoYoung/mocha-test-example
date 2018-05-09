@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha utils/*.test.js",
+    "test": "node node_modules/mocha/bin/mocha **/*.test.js",
     "test-watch": "nodemon --exec \"npm test\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "expect": "^1.20.2",
-    "mocha": "^5.1.1"
+    "mocha": "^5.1.1",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
